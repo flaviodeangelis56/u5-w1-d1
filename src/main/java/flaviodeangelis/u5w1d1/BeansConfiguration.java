@@ -1,6 +1,7 @@
 package flaviodeangelis.u5w1d1;
 
 import flaviodeangelis.u5w1d1.entities.Drink;
+import flaviodeangelis.u5w1d1.entities.Menù;
 import flaviodeangelis.u5w1d1.entities.Pizza;
 import flaviodeangelis.u5w1d1.entities.Topping;
 import org.springframework.context.annotation.Bean;
@@ -57,5 +58,10 @@ public class BeansConfiguration {
     @Bean
     Drink getCola() {
         return new Drink("Coca Cola", 211, 2.50);
+    }
+
+    @Bean
+    Menù getMenù(List<Pizza> pizze, List<Topping> ingredienti, List<Drink> bevande) {
+        return new Menù(pizze, ingredienti, bevande);
     }
 }

@@ -10,7 +10,7 @@ import java.util.List;
 @Getter
 @ToString
 public class Pizza {
-    private String pizzaName;
+    String pizzaName = "";
     private List<Topping> ingredients;
     private int calories;
     private double price;

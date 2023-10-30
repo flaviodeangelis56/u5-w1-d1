@@ -1,15 +1,11 @@
 package flaviodeangelis.u5w1d1.entities;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Setter
 @Getter
-@ToString
-public class Topping {
-    private String ingredient;
-    private int calories;
-    private double price;
+@AllArgsConstructor
+public class Topping extends Pizza {
+    Pizza pizza;
 
 }

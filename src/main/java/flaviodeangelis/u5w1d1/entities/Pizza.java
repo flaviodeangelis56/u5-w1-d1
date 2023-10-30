@@ -1,9 +1,6 @@
 package flaviodeangelis.u5w1d1.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -11,9 +8,10 @@ import java.util.List;
 @NoArgsConstructor
 @Setter
 @Getter
+@ToString
 public class Pizza {
     private String pizzaName;
-    private List<String> ingredients;
+    private List<Topping> ingredients;
     private int calories;
     private double price;
 }
